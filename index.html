@@ -1,0 +1,80 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AstroCorp</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        AstroCorp
+        <div>Fecha: <span id="fecha"></span></div>
+    </header>
+
+    <div class="containers">
+    <div class="misiones-container">
+        <div class="Panel">
+        <h2>Nueva Misión Espacial</h2>
+
+            <input type="text" name="nombreMision" id="nombreMision" placeholder="Nombre de la misión"><br>
+            <input type="text" name="objetivoMision" id="objetivoMision" placeholder="Objetivo (Exploracion, Observación...)">
+            <br>
+            <button onclick="registrarMision()">Registrar Misión</button>
+
+        <div id="listaMisiones"></div>
+        <div class="card">
+            <span>Odisea 1 - Exploracion - Estado: En curso</span>
+            <div class="actions">
+                <button title="Editar"><i class="fa-solid fa-pencil"></i></button>
+                <button title="Eliminar"><i class="fa-solid fa-trash"></i></button>
+                <button title="Cambiar estado"><i class="fa-solid fa-rotate"></i></button>
+            </div>
+        </div>
+        <div class="card">
+            <span>SolarEye - Observación - Estado: Completada</span>
+            <div class="actions">
+                <button title="Editar"><i class="fa-solid fa-pencil"></i></button>
+                <button title="Eliminar"><i class="fa-solid fa-trash"></i></button>
+                <button title="Cambiar estado"><i class="fa-solid fa-rotate"></i></button>
+            </div>
+        </div>
+        </div>
+    </div>
+    
+    <div class="vehiculos-container">
+        <div class="Panel">
+        <h2>Nuevo Vehículo Orbital</h2>
+
+            <input type="text" name="nombreVehiculo" id="nombreVehiculo" placeholder="Nombre del vehículo"><br>
+            <input type="text" name="tipoVehiculo" id="tipoVehiculo" placeholder="Tipo (Satélite, Rover, Cápsula)">
+            <br>
+            <button onclick="registrarMision()">Registrar Vehículo</button>
+
+        <div id="listaVehiculos"></div>
+        <div class="card">
+            <span>OrbSat-X - Satélite - Estado: Activo</span>
+            <div class="actions">
+                <button title="Editar"><i class="fa-solid fa-pencil"></i></button>
+                <button title="Eliminar"><i class="fa-solid fa-trash"></i></button>
+                <button title="Cambiar estado"><i class="fa-solid fa-rotate"></i></button>
+            </div>
+        </div>
+        <div class="card">
+            <span>LunarBot - Rover - Estado: Retirado</span>
+            <div class="actions">
+                <button title="Editar"><i class="fa-solid fa-pencil"></i></button>
+                <button title="Eliminar"><i class="fa-solid fa-trash"></i></button>
+                <button title="Cambiar estado"><i class="fa-solid fa-rotate"></i></button>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+    <script src="index.js"></script>
+</body>
+
+<footer>
+    AstroCorp &copy; 2024. Todos los derechos reservados. Nicolas Cadena y Jaider Coronel
+</footer>
+</html>
