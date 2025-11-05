@@ -19,23 +19,23 @@
             <input type="text" name="nombreMision" id="nombreMision" placeholder="Nombre de la misión"><br>
             <input type="text" name="objetivoMision" id="objetivoMision" placeholder="Objetivo (Exploracion, Observación...)">
             <br>
-            <button onclick="registrarMision()">Registrar Misión</button>
+            <button onclick="agregarMision()">Registrar Misión</button>
 
-        <div id="listaMisiones"></div>
+        <div id="listamisiones"></div>
         <div class="card">
             <span>Odisea 1 - Exploracion - Estado: En curso</span>
             <div class="actions">
-                <button title="editar"><i class="fa-solid fa-pencil"></i></button>
-                <button title="eliminar"><i class="fa-solid fa-trash"></i></button>
-                <button title="cambiarEstado"><i class="fa-solid fa-rotate"></i></button>
+                <button onclick="editarMision()"><i class="fa-solid fa-pencil"></i></button>
+                <button onclick="eliminarMision()"><i class="fa-solid fa-trash"></i></button>
+                <button onclick="cambiarEstado()"><i class="fa-solid fa-rotate"></i></button>
             </div>
         </div>
         <div class="card">
             <span>SolarEye - Observación - Estado: Completada</span>
             <div class="actions">
-                <button title="editar"><i class="fa-solid fa-pencil"></i></button>
-                <button title="eliminar"><i class="fa-solid fa-trash"></i></button>
-                <button title="cambiarEstado"><i class="fa-solid fa-rotate"></i></button>
+                <button onclick="editarMision()"><i class="fa-solid fa-pencil"></i></button>
+                <button onclick="eliminarMision()"><i class="fa-solid fa-trash"></i></button>
+                <button onclick="cambiarEstado()"><i class="fa-solid fa-rotate"></i></button>
             </div>
         </div>
         </div>
@@ -48,23 +48,23 @@
             <input type="text" name="nombreVehiculo" id="nombreVehiculo" placeholder="Nombre del vehículo"><br>
             <input type="text" name="tipoVehiculo" id="tipoVehiculo" placeholder="Tipo (Satélite, Rover, Cápsula)">
             <br>
-            <button onclick="registrarMision()">Registrar Vehículo</button>
+            <button onclick="agregarVehiculo()">Registrar Vehículo</button>
 
-        <div id="listaVehiculos"></div>
+        <div id="listavehiculos"></div>
         <div class="card">
             <span>OrbSat-X - Satélite - Estado: Activo</span>
             <div class="actions">
-                <button title="editar"><i class="fa-solid fa-pencil"></i></button>
-                <button title="eliminar"><i class="fa-solid fa-trash"></i></button>
-                <button title="cambiarEstado"><i class="fa-solid fa-rotate"></i></button>
+                <button onclick="editarVehiculo()"><i class="fa-solid fa-pencil"></i></button>
+                <button onclick="eliminarVehiculo()"><i class="fa-solid fa-trash"></i></button>
+                <button onclick="cambiarEstadoVehiculo()"><i class="fa-solid fa-rotate"></i></button>
             </div>
         </div>
         <div class="card">
             <span>LunarBot - Rover - Estado: Retirado</span>
             <div class="actions">
-                <button title="editar"><i class="fa-solid fa-pencil"></i></button>
-                <button title="eliminar"><i class="fa-solid fa-trash"></i></button>
-                <button title="cambiarEstado"><i class="fa-solid fa-rotate"></i></button>
+                <button onclick="editarVehiculo()"><i class="fa-solid fa-pencil"></i></button>
+                <button onclick="eliminarVehiculo()"><i class="fa-solid fa-trash"></i></button>
+                <button onclick="cambiarEstadoVehiculo()"><i class="fa-solid fa-rotate"></i></button>
             </div>
         </div>
         </div>
